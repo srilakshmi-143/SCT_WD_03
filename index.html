@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="max-height:90vh;overflow-y:auto;">
+  <div class="quiz-container">
+    <h1>🧠 Interactive Quiz</h1>
+    <form id="quiz-form">
+
+      <!-- Question 1: Single-select -->
+      <div class="question">
+        <p>1. Which of the following is a compiled language</p>
+        <label><input type="radio" name="q1" value="A"> A. Python</label><br>
+        <label><input type="radio" name="q1" value="B"> B. Java</label><br>
+        <label><input type="radio" name="q1" value="C"> C. C</label><br>
+        <label><input type="radio" name="q1" value="D"> D. HTML</label>
+      </div>
+
+      <!-- Question 2: Multi-select -->
+      <div class="question">
+        <p>2. Which of the following are programming languages? (Select all that apply)</p>
+        <label><input type="checkbox" name="q2" value="A"> A. Python</label><br>
+        <label><input type="checkbox" name="q2" value="B"> B. HTML</label><br>
+        <label><input type="checkbox" name="q2" value="C"> C. Java</label><br>
+        <label><input type="checkbox" name="q2" value="D"> D. SQL</label>
+      </div>
+
+      <!-- Question 3: Fill in the blank -->
+      <div class="question">
+        <p>3. Fill in the blank: The process of finding and fixing errors in code is called _______.</p>
+        <input type="text" name="q3" placeholder="Your answer">
+      </div>
+      <div class="question">
+        <p>4.which of the following is not a programming language?</p>
+        <label><input type="radio" name="q4" value="A"> A. HTML</label><br>
+        <label><input type="radio" name="q4" value="B"> B. C++</label><br>
+        <label><input type="radio" name="q4" value="C"> C. Python</label><br>
+        <label><input type="radio" name="q4" value="D"> D. Java</label>
+      </div>
+      <div class="question">
+        <p>5. CSS stands for....</p>
+        <input type="text" name="q5" placeholder="Your answer">
+      </div>
+      <div class="question">
+        <p>6. HTML stands for....</p>
+        <input type="text" name="q6" placeholder="Your answer">
+      </div>
+    </div>
+
+
+      <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
